@@ -1,0 +1,245 @@
+body {
+  display: block;
+  background-image: url("../images/wood2.png");
+  background-repeat: repeat;
+}
+
+
+header {
+  display: block;
+  width: 100%;
+  min-height: 310px;
+  position: relative;
+  border-bottom: 3px solid black;
+  h1 {
+    color: white;
+    text-align: center;
+    font-family: helvetica, arial;
+    font-size: 70;
+    margin-top: -28px;
+    margin-bottom: -28px;
+  }
+  h2 {
+    color: white;
+    text-align: center;
+    font-family: helvetica, arial;
+    font-size:45;
+  }
+  a {
+    text-decoration: none;
+    color: gold;
+  }
+  a:hover {
+    color: palegoldenrod;
+    font-size: 32;
+  }
+  nav ul{
+    list-style-type: none;
+    text-align:center;
+  }
+  nav li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: helvetica, arial;
+    font-weight: bold;
+  }
+}
+
+
+.cont {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 80%;
+  background-color: rgba(255,255,255,.5);
+  font-family: helvetica, arial;
+  section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 55%;
+    border-right: 7px solid grey;
+  }
+  aside {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    padding-left: 5%;
+  }
+}
+
+
+
+
+.linx {
+  margin: 0 auto;
+  font-family: helvetica, arial;
+  width: 80%;
+  ul{
+    display: inline-block;
+    list-style-type: none;
+    background-color: white;
+    opacity:.9;
+  }
+  li{
+    text-align: center;
+  }
+  img{
+    padding-bottom: 10px;
+  }
+  #one{
+    padding: 10px;
+    margin-left: 10%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #two{
+    padding: 10px;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #three{
+    padding: 10px;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
+
+
+.work {
+  padding: 10px;
+  li{
+    font-weight: bold;
+  }
+}
+
+
+
+footer {
+  a {
+    text-decoration: none;
+    color: gold;
+    background-color: black;
+  }
+  a:hover {
+    color: palegoldenrod;
+    font-size: 18;
+  }
+  nav ul{
+    list-style-type: none;
+    text-align:center;
+  }
+  nav li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15;
+    font-family: helvetica, arial;
+    font-weight: bold;
+  }
+}
+
+
+/*MEDIA*/
+
+@media all and (max-width: 320px) {
+  header{
+    min-height: 200px;
+    h1 {
+      color: white;
+      text-align: center;
+      font-family: helvetica, arial;
+      font-size: 35px;
+      margin-top: -28px;
+      margin-bottom: -28px;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      font-family: helvetica, arial;
+      font-size:25px;
+    }
+    h3 {
+      font-size: 17px;
+    }
+    nav ul {
+      margin-top: 35px;
+      padding: 0;
+    }
+    nav li {
+      display: block;
+    }
+    nav a {
+      text-decoration: underline;
+      color: gold;
+    }
+    nav h3:hover {
+      color: palegoldenrod;
+      font-size: 18px;
+    }
+  }
+  .cont {
+    width: 100%;
+    section {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-right: none;
+      border-bottom: 3px solid grey;
+      h3, p{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+      }
+    }
+    aside {
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      h3, p{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .linx{
+    #one{
+      margin: 10px;
+    }
+    #two{
+      margin: 10px;
+    }
+    #three{
+      margin: 10px;
+    }
+  }
+  footer {
+
+    nav ul{
+      padding: 0;
+      list-style-type: none;
+      text-align:center;
+    }
+    nav li {
+      display: inline-block;
+      padding-left: 3px;
+      padding-right: 3px;
+      font-size: 11px;
+      font-family: helvetica, arial;
+      font-weight: bold;
+    }
+    a:hover {
+      color: palegoldenrod;
+      font-size: 12px;
+    }
+  }
+}
